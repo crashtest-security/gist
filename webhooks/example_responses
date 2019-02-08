@@ -1,0 +1,2 @@
+{"message": "webhook_scan_started", "data": {"scanId": SCAN_ID}}    # Success Case
+{"message": "Scan is already running"}                              # Failure Case
