@@ -1,0 +1,10 @@
+$ curl --data '{"username": "username", "password": "password"}' -X POST https://example.com/api/v1/login
+ 
+{
+    "token_type": "Bearer",
+    "expires_in": 86400,
+    "access_token": "ABCDEF",
+    "refresh_token": "ABCDEF",
+    "concurrent_sessions": 1,
+    "max_current_sessions": 40,
+}
