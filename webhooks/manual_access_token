@@ -1,0 +1,10 @@
+ACCESS_TOKEN=`curl --data '{"username": "username", "password": "password"}' -X POST https://example.com/api/v1/login | jq -r '.access_token`
+curl --data "{
+  \"parameter_authentication\": [
+    {
+      \"type\": \"HEADER\",
+      \"key\": \"Authentication\",
+      \"value\": \"Bearer $ACCESS_TOKEN\"
+    }
+  ]
+}" -X POST https://api.crashtest.cloud/webhook/SECRET_HASH

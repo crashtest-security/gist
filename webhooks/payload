@@ -1,0 +1,22 @@
+curl --data '{
+  "system_authentication": {
+    "basic_auth": {
+      "username": "username",
+      "password": "password"
+    }
+  },
+  "application_authentication": [
+    {
+      "username": "username",
+      "password": "password",
+      "url": "example.com/login"
+    }
+  ],
+  "parameter_authentication": [
+    {
+      "type": "HEADER",
+      "key": "Authentication",
+      "value": "Bearer 12345678"
+    }
+  ]
+}' -X POST https://api.crashtest.cloud/webhook/SECRET_HASH
