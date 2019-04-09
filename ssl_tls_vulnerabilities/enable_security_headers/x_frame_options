@@ -1,0 +1,4 @@
+Value               Effect
+deny	              Do not allow frames of this site
+sameorigin          Allow frames of this site when the domain matches
+allow-from DOMAIN   Allow frames of this site when embedded in webpages on DOMAIN
