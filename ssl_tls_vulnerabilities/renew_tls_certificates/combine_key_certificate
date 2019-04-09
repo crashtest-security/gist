@@ -1,0 +1,2 @@
+cp ssl/certificate.key ssl/new.pem
+cat ssl/new.crt >> ssl/new.pem
