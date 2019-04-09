@@ -1,0 +1,3 @@
+htmlspecialchars($input)                                    # PHP
+html.escape(input, quote=True)                              # Python
+org.apache.commons.lang.StringEscapeUtils.escapeHtml(input) # Java
