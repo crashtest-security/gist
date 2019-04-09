@@ -1,0 +1,3 @@
+cp privkey.pem /etc/ssl/privkey.key
+cp privkey.pem /etc/ssl/new.pem
+cat new.crt >> /etc/ssl/new.pem

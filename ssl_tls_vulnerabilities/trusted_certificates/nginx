@@ -1,0 +1,12 @@
+server {
+ 
+        listen   443;
+        server_name example.org;
+ 
+        root /usr/share/nginx/www;
+        index index.html index.htm;
+ 
+        ssl on;
+        ssl_certificate /etc/ssl/new;
+        ssl_certificate_key /etc/ssl/privkey.key;
+}

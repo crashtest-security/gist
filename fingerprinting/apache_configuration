@@ -1,8 +1,3 @@
-ServerSignature Off
-ServerTokens Prod
-
-# reload webserver configuration
-
 service apache2 restart             # Debian, Mint, Ubuntu
 systemctl restart apache2.service   # Debian 8
 service httpd restart               # CentOS/RHEL 6

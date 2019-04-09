@@ -1,0 +1,1 @@
+openssl req -new -key ssl/certificate.key -out ssl/certificate_signing_request.csr

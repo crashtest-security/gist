@@ -1,0 +1,17 @@
+server {
+        add_header Strict-Transport-Security "max-age=63072000; includeSubdomains; ";
+ 
+        listen   443;
+        server_name example.org;
+ 
+        root /usr/share/nginx/www;
+        index index.html index.htm;
+ 
+        ssl on;
+        ssl_certificate /etc/nginx/ssl/example.org/server.crt;
+        ssl_certificate_key /etc/nginx/ssl/example.org/server.key;
+ 
+        ssl_stapling on;
+        ssl_stapling_verify on;
+        ssl_trusted_certificate /etc/ssl/private/ca-certs.pem;
+}
