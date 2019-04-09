@@ -1,0 +1,6 @@
+$stmt = $mysqli->prepare("INSERT INTO users(username, password, email) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $username, $password, $email) # "sss" here states, that three strings are expected.
+$username = $request->username;
+$password = $request->password;
+$email = $request->email;
+$stmt->execute();
