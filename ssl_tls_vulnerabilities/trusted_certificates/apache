@@ -1,0 +1,14 @@
+<IfModule mod_ssl.c>
+    SSLStaplingCache shmcb:/tmp/stapling_cache(128000)
+    <VirtualHost *:443>
+ 
+            ServerAdmin webmaster@localhost
+            ServerName example.com
+            DocumentRoot /var/www
+ 
+            SSLEngine on
+ 
+            SSLCertificateFile /etc/ssl/new.pem
+            SSLCertificateKeyFile /etc/ssl/privkey.key
+    </VirtualHost>
+</IfModule>
