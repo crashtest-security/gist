@@ -1,0 +1,7 @@
+<?php
+$ip = $_POST['ip'];
+$cmd = system('ping '.$ip);
+ 
+echo $cmd
+ 
+?>

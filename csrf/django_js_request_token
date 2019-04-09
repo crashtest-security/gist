@@ -1,0 +1,3 @@
+var csrftoken = Cookies.get('csrftoken');
+...
+xhr.setRequestHeader("X-CSRFToken", csrftoken);

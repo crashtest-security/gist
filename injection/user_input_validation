@@ -1,0 +1,11 @@
+<?php
+ 
+if(isset($_GET['page']) and $_GET['page'] == 'home') {
+    include('home.php');
+}
+elseif(isset($_GET['page']) and $_GET['page'] == 'news') {
+    include('news.php');
+}
+// some other pages
+ 
+?>

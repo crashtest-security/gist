@@ -1,0 +1,3 @@
+<a href="http://example.org/search/q?...USER INPUT..."></div>
+<script>alert('...USER INPUT...')</script>
+<style> { property: ...USER INPUT...; } </style>
