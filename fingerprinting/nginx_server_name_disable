@@ -1,0 +1,3 @@
+apt-get install nginx-extras            # Debian, Ubuntu
+yum install nginx-extras                # Fedora
+yaourt -S nginx-mod-headers-more-git    # Arch with yaourt package manager to install aur packages
