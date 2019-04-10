@@ -1,0 +1,4 @@
+Value           Effect
+0               Disable the filter
+1               Enable the filter to sanitize the webpage in case of an attack
+1; mode=block   Enable the filter to block the webpage in case of an attack

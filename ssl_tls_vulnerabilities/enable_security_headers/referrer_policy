@@ -1,0 +1,9 @@
+Value                               Effect
+no-referrer                         Do not include any referrer information on requests
+no-referrer-when-downgrade          Do not send the referrer when the actual connection is a https request and the new request is http
+origin                              Send the origin as referrer but do not include any path information
+origin-when-cross-origin            Send the origin as referrer when the new request is on another domain and all information for same-origin cases
+same-origin                         Send the referrer only when the request stays in the current domain
+strict-origin                       Send the origin as referrer, but only when the request is no downgrade from https to http
+strict-origin-when-cross-origin     Send the origin as referrer to cross-origin requests and the full referrer on same-origin requests but only when the request is no downgrade
+unsafe-url                          Always send the full URL as referrer

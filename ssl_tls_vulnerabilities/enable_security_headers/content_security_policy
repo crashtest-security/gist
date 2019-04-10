@@ -1,0 +1,17 @@
+Value                                       Effect
+default-scr 'self' resources.example.org    Define loading all ressource types from the own domain and resources.example.org
+script-src 'self' scripts.example.org       Enable loading scripts from the own domain and scripts.example.org
+object-src 'none'                           Disallow loading of all objects such as <applet>, <embed> and <object>
+style-src 'self' style.example.org          Enable loading stylesheets from the own domain and style.example.org
+img-src 'self' imgs.example.org             Enable loading images from the own domain and imgs.example.org
+media-scr 'self' media.example.org          Enable loading media elements from the own domain and media.example.org
+child-src 'self'                            Define that in <frame> and <iframe> elements only pages from the own domain may be loaded
+font-src 'self' fonts.example.org           Enable loading fonts from the own domain and fonts.example.org
+connect-src 'self' api.example.org          Enable connections via script interfaces such as XMLHttpRequest or WebSocket to the own domain and api.example.org
+manifest-src 'self'                         Enable loading manifests from the own domain
+frame-ancestors 'self'                      Define that this page may only be used as a frame on pages of the own domain
+form-action 'self'                          Ensures that form actions can only be of the own domain
+sandbox                                     Enables a sandbox that blocks most actions on the page. More Information: CSP: sandbox
+plugin-types application/x-java-applet      Allows to embed an <applet>. This only works if object-src is not set to 'none'
+block-all-mixed-conten                      Prevents browser to load mixed content (such as http and https mixed elements)
+upgrade-insecure-requests                   Download all resources via an https connection
