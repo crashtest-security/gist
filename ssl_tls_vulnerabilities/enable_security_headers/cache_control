@@ -1,0 +1,10 @@
+Value                               Effect
+must-revalidate                     The cache must revalidate the state of the resource before using it
+no-cache                            Send the request even if the cache has stored the resource
+no-store                            Do not store the resource in any cache
+no-transform                        Do not transform the resource (e.g. change image format to store cache space)
+public                              Allow to store the resource in any cache
+private                             Allow to store the resource in a user specific cache, but not an a shared cache
+proxy-revalidate                    Same as must-revalidate for shared caches
+max-age=<seconds>                   Configure the time for which the resource will be treated as fresh
+s-maxage=<seconds>                  Overwrite a max-age or Expires header, but is only used for shared caches
