@@ -6,20 +6,6 @@
     "contact": {},
     "version": "1.0"
   },
-  "servers": [
-    {
-      "url": "http://api-staging.shore.com/v2/shore_pos_ingress",
-      "variables": {}
-    },
-    {
-      "url": "https://api.shore.com",
-      "variables": {}
-    },
-    {
-      "url": "http://example.com",
-      "variables": {}
-    }
-  ],
   "paths": {
     "/v2/appointments": {
       "post": {
